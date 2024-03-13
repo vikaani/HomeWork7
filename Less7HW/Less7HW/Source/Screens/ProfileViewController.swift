@@ -3,12 +3,9 @@
 //  Less7HW
 //
 
-//
-
 import UIKit
 
 class ProfileViewController: UIViewController {
-
     @IBOutlet weak var avaImageView: UIImageView!
     
     @IBOutlet weak var firstNameLabel: UILabel!
@@ -23,21 +20,22 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func loadUserDataButtonAction(_ sender: UIButton) {
-        
-        dataProvider.loadUserData()
+        dataProvider.loadUserData() { [weak self] userData in
+            self?.updateUI(data: userData)
+        }
     }
     
     @IBAction func loadAdminDataButtonAction(_ sender: UIButton) {
-        
-        dataProvider.loadAdminData()
+        dataProvider.loadAdminData { [weak self] adminData in
+            self?.updateUI(data: adminData)
+        }
     }
     
-    func updateUI() {
-        
-//        avaImageView.image = UIImage(named: "")
-//        firstNameLabel.text =
-//        lastNameLabel.text =
-//        eMailLabel.text =
-//        addressLabel.text =
+    func updateUI(data: ProfileData) {
+        avaImageView.image = UIImage(named: data.avatarName)
+        firstNameLabel.text = data.firstName
+        lastNameLabel.text = data.lastName
+        eMailLabel.text = data.email
+        addressLabel.text = data.address
     }
 }

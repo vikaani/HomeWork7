@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63CC9D2F2BA1BAD600775C39 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC9D2E2BA1BAD600775C39 /* ProfileData.swift */; };
+		63CC9D312BA1BAE600775C39 /* UserModel+ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC9D302BA1BAE600775C39 /* UserModel+ProfileData.swift */; };
+		63CC9D332BA1BB6800775C39 /* AdminModel+ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC9D322BA1BB6800775C39 /* AdminModel+ProfileData.swift */; };
 		CEEEFE142BA0673500D443D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFE132BA0673500D443D1 /* AppDelegate.swift */; };
 		CEEEFE162BA0673500D443D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFE152BA0673500D443D1 /* SceneDelegate.swift */; };
 		CEEEFE1B2BA0673500D443D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEEFE192BA0673500D443D1 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63CC9D2E2BA1BAD600775C39 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		63CC9D302BA1BAE600775C39 /* UserModel+ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+ProfileData.swift"; sourceTree = "<group>"; };
+		63CC9D322BA1BB6800775C39 /* AdminModel+ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdminModel+ProfileData.swift"; sourceTree = "<group>"; };
 		CEEEFE102BA0673500D443D1 /* Less7HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Less7HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEEFE132BA0673500D443D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEEFE152BA0673500D443D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63CC9D2C2BA1BAA200775C39 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63CC9D2E2BA1BAD600775C39 /* ProfileData.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		63CC9D2D2BA1BAA800775C39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63CC9D302BA1BAE600775C39 /* UserModel+ProfileData.swift */,
+				63CC9D322BA1BB6800775C39 /* AdminModel+ProfileData.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CEEEFE072BA0673500D443D1 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +94,8 @@
 		CEEEFE272BA068B700D443D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				63CC9D2D2BA1BAA800775C39 /* Extensions */,
+				63CC9D2C2BA1BAA200775C39 /* Protocols */,
 				CEEEFE292BA068CE00D443D1 /* AppDelegate */,
 				CEEEFE372BA0792200D443D1 /* Services */,
 				CEEEFE2A2BA068DF00D443D1 /* Screens */,
@@ -221,9 +246,12 @@
 			files = (
 				CEEEFE392BA0793500D443D1 /* DataProviderService.swift in Sources */,
 				CEEEFE142BA0673500D443D1 /* AppDelegate.swift in Sources */,
+				63CC9D2F2BA1BAD600775C39 /* ProfileData.swift in Sources */,
 				CEEEFE302BA06C4F00D443D1 /* ProfileViewController.swift in Sources */,
 				CEEEFE322BA077C100D443D1 /* UserModel.swift in Sources */,
+				63CC9D312BA1BAE600775C39 /* UserModel+ProfileData.swift in Sources */,
 				CEEEFE342BA077DA00D443D1 /* AdminModel.swift in Sources */,
+				63CC9D332BA1BB6800775C39 /* AdminModel+ProfileData.swift in Sources */,
 				CEEEFE162BA0673500D443D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

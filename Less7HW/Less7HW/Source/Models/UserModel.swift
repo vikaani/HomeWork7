@@ -3,8 +3,6 @@
 //  Less7HW
 //
 
-//
-
 import Foundation
 
 struct UserModel {
@@ -13,5 +11,5 @@ struct UserModel {
     let userFirstName: String
     let userLastName: String
     let userEmail: String
-    let userAdderss: String
+    let userAddress: String
 }
